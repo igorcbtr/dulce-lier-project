@@ -720,8 +720,8 @@ address p + p { margin-top: 6px; }
   .brand img { height: 50px; }
   .header-bar > .slogan {
     position: absolute;
-    left: 50%;
-    width: min(50vw, 260px);
+    left: calc(50% - 10px);
+    width: min(46vw, 240px);
     transform: translateX(-50%);
     min-width: 0;
     margin-left: 0;
@@ -774,7 +774,12 @@ address p + p { margin-top: 6px; }
 
   .theme-toggle {
     justify-self: end;
-    padding: 8px;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 12px;
   }
 
   .theme-toggle .theme-label { display: none; }
@@ -837,7 +842,14 @@ address p + p { margin-top: 6px; }
     text-align: center;
     font-size: 0.78rem;
   }
-  .menu-toggle { padding-inline: 8px; }
+  .menu-toggle {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 12px;
+  }
   .hero { gap: 24px; padding: 42px 0 26px; }
   .hero h1 { font-size: clamp(2.35rem, 12vw, 3.2rem); }
   .hero-copy p { font-size: 0.95rem; }
