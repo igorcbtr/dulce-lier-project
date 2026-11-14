@@ -18,7 +18,11 @@
         <img src="images/products/logo.png" alt="DulceLier" width="1057" height="884">
       </a>
       <p class="slogan">Dulciuri naturale pentru momente speciale.</p>
-      <nav class="nav" aria-label="Principal">
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="menu-toggle-label">Meniu</span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Principal">
         <a href="#catalog">Produse</a>
         <a href="#oferte">Oferte</a>
         <button type="button" class="nav-about" data-open-cuprins aria-expanded="false" aria-controls="cuprins">Despre noi</button>
@@ -28,8 +32,8 @@
   </header>
 
   <main>
-    <section class="hero" id="prezentare">
-      <div class="hero-copy">
+    <section class="hero pattern-panel" id="prezentare">
+      <div class="hero-copy reveal">
         <p class="kicker">Despre noi</p>
         <h1>FE „DulceLier” SRL</h1>
         <p>FE „DulceLier” SRL este o firmă specializată în producerea dulciurilor naturale, fără zahăr adăugat, realizate din ingrediente atent selecționate și de calitate.</p>
@@ -37,20 +41,20 @@
         <p>Misiunea noastră este să oferim consumatorilor alternative delicioase la dulciurile tradiționale, punând accent pe naturalețe, calitate și satisfacția clienților.</p>
         <p>Prin sloganul „Dulciuri naturale pentru momente speciale”, dorim să transformăm fiecare moment dulce într-o experiență plăcută și memorabilă.</p>
       </div>
-      <figure class="hero-photo">
-        <img src="images/8.jpg" alt="Cremă de alune și cacao DulceLier, alături de o trufă și o brioșă" width="1280" height="853">
+      <figure class="hero-photo reveal">
+        <img src="images/products/10_transparent.png" alt="Cremă de alune și cacao DulceLier, alături de o trufă și o brioșă" width="1280" height="853">
       </figure>
     </section>
 
-    <section class="catalog" id="catalog">
+    <section class="catalog pattern-panel" id="catalog">
       <header class="section-head">
         <p class="kicker">Catalog 2026</p>
         <h2>Produsele noastre</h2>
       </header>
 
-      <article class="category" id="creme">
+      <article class="category reveal" id="creme">
         <div class="category-intro">
-          <img src="images/3.jpg" alt="Trei borcane cu pastă de fistic, cremă de alune și cacao și cremă de migdale" width="1280" height="791">
+          <img src="images/products/10_transparent.png" alt="Trei borcane cu pastă de fistic, cremă de alune și cacao și cremă de migdale" width="1280" height="853">
           <div>
             <p class="kicker">04</p>
             <h3>Creme și paste naturale</h3>
@@ -58,29 +62,29 @@
           </div>
         </div>
         <div class="products">
-          <article class="card">
-            <img src="images/products/cacao.jpg" alt="Borcan de Cremă Tartinabilă de Alune și Cacao" width="277" height="331">
+          <article class="card reveal">
+            <img src="images/products/01_crema_tartinabila_alune_cacao.png" alt="Borcan de Cremă Tartinabilă de Alune și Cacao" width="278" height="396">
             <h4>Cremă Tartinabilă de Alune și Cacao</h4>
             <p class="weight">Greutate netă: 320 g</p>
             <p>O cremă premium, catifelată și irezistibilă, preparată din alune de pădure atent selecționate, prăjite la perfecțiune și amestecate cu cacao fină. Fără ulei de palmier.</p>
             <p class="price">105 lei</p>
           </article>
-          <article class="card">
-            <img src="images/products/nuci.jpg" alt="Borcan de Pastă Naturală de Nuci Coapte" width="280" height="331">
+          <article class="card reveal">
+            <img src="images/products/02_pasta_naturala_nuci_coapte.png" alt="Borcan de Pastă Naturală de Nuci Coapte" width="281" height="397">
             <h4>Pastă Naturală de Nuci Coapte</h4>
             <p class="weight">Greutate netă: 280 g</p>
             <p>O pastă bogată și aromată, realizată exclusiv din nuci românești atent prăjite pentru a le intensifica gustul. Măcinarea grosieră păstrează textura naturală. Produs 100% natural, fără zahăr sau uleiuri adăugate.</p>
             <p class="price">95 lei</p>
           </article>
-          <article class="card">
-            <img src="images/products/migdale.jpg" alt="Borcan de Cremă de Migdale Prăjite Fine" width="283" height="331">
+          <article class="card reveal">
+            <img src="images/products/crema_migdale_300g_transparent.png" alt="Borcan de Cremă de Migdale Prăjite Fine" width="896" height="1198">
             <h4>Cremă de Migdale Prăjite Fine</h4>
             <p class="weight">Greutate netă: 300 g</p>
             <p>O pastă fină, cremoasă și delicată, obținută din migdale selecționate, prăjite ușor pentru a le păstra nutrienții și aroma naturală. O sursă excelentă de proteine și grăsimi sănătoase. Fără zahăr adăugat.</p>
             <p class="price">130 lei</p>
           </article>
-          <article class="card">
-            <img src="images/products/fistic.jpg" alt="Borcan de Pastă Premium de Pistache" width="287" height="331">
+          <article class="card reveal">
+            <img src="images/products/pasta_pistache_250g_transparent.png" alt="Borcan de Pastă Premium de Pistache" width="896" height="1194">
             <h4>Pastă Premium de Pistache</h4>
             <p class="weight">Greutate netă: 250 g</p>
             <p>O pastă vibrantă și intensă, obținută din cele mai fine boabe de pistache coapte. Un gust autentic și rafinat, fără arome sau coloranți artificiali. Produs 100% natural, fără zahăr adăugat.</p>
@@ -89,9 +93,9 @@
         </div>
       </article>
 
-      <article class="category" id="deserturi">
+      <article class="category reveal" id="deserturi">
         <div class="category-intro">
-          <img src="images/products/deserturi.jpg" alt="Cutii cu trufe și brioșe artizanale DulceLier" width="1280" height="853">
+          <img src="images/products/desserts_assortment_clean.png" alt="Cutii cu trufe și brioșe artizanale DulceLier" width="1262" height="840">
           <div>
             <p class="kicker">07</p>
             <h3>Deserturi artizanale</h3>
@@ -99,15 +103,15 @@
           </div>
         </div>
         <div class="products">
-          <article class="card">
-            <img src="images/products/trufle.jpg" alt="Cutie cu bomboane artizanale tip trufă" width="500" height="237">
+          <article class="card reveal">
+            <img src="images/products/05_cutie_bomboane_trufe.png" alt="Cutie cu bomboane artizanale tip trufă" width="425" height="315">
             <h4>Bomboane artizanale (trufle)</h4>
             <p class="weight">Greutate netă: 150 g / 12 bucăți</p>
             <p>O selecție rafinată de bomboane artizanale tip trufă, lucrate manual. Mixul conține trufle de ciocolată neagră cu pudră de cacao și trufle de ciocolată albă cu fulgi de nucă de cocos fină. Un desert elegant și catifelat.</p>
             <p class="price">150 lei</p>
           </article>
-          <article class="card">
-            <img src="images/products/briose.jpg" alt="Cutie cu brioșe clasice cu nuci" width="495" height="237">
+          <article class="card reveal">
+            <img src="images/products/06_cutie_briose_nuci.png" alt="Cutie cu brioșe clasice cu nuci" width="397" height="307">
             <h4>Brioșe clasice cu nuci</h4>
             <p class="weight">Greutate netă: 240 g / 4 bucăți</p>
             <p>Brioșe pufoase și aromate, coapte cu migală după o rețetă tradițională. Textură fragedă și un gust bogat, decorate cu nucă caramelizată deasupra, perfecte pentru micul dejun sau o gustare delicioasă.</p>
@@ -117,8 +121,8 @@
       </article>
     </section>
 
-    <section class="offers" id="oferte">
-      <div class="offer">
+    <section class="offers pattern-panel" id="oferte">
+      <div class="offer reveal">
         <div class="offer-copy">
           <p class="kicker">Ofertă specială</p>
           <h2>Ziua Studentului la DulceLier</h2>
@@ -127,34 +131,48 @@
           <p class="offer-when">16–18 noiembrie · or. Rîșcani, str. Trandafirilor 37</p>
         </div>
         <figure class="offer-photo">
-          <img src="images/6.jpg" alt="Cutie cadou DulceLier cu cremă de alune, trufe și brioșe" width="1280" height="1169">
+          <img src="images/products/06_transparent.png" alt="Cutie cadou DulceLier cu cremă de alune, trufe și brioșe" width="1280" height="1169">
         </figure>
       </div>
     </section>
 
-    <figure class="finale">
-      <img src="images/10.jpg" alt="Borcan DulceLier pe un platou de lemn, cu ciocolată, alune și flori" width="1280" height="853">
-    </figure>
+    <section class="contact-feature pattern-panel reveal" id="contact" aria-labelledby="contact-feature-title">
+      <div class="contact-feature-photo">
+        <img src="images/products/10_transparent.png" alt="Borcan DulceLier pe un platou de lemn, cu ciocolată, alune și flori" width="1280" height="853">
+      </div>
+      <div class="contact-feature-copy">
+        <p class="kicker">Vorbește cu noi</p>
+        <h2 id="contact-feature-title">Un moment dulce începe cu un mesaj.</h2>
+        <address>
+          <p>or. Rîșcani, str. Trandafirilor 37</p>
+          <p><a href="mailto:ddulcelier@gmail.com">ddulcelier@gmail.com</a></p>
+        </address>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer">
     <div class="footer-brand">
       <img src="images/products/logo.png" alt="DulceLier" width="1057" height="884">
       <p class="motto">Dulciuri naturale pentru momente speciale.</p>
       <p class="year">2026</p>
     </div>
-    <nav class="footer-nav" aria-label="Subsol">
-      <a href="#catalog">Catalog</a>
-      <a href="#prezentare">Despre brand</a>
-      <a href="#contact">Contacte</a>
-    </nav>
-    <address>
-      <p>or. Rîșcani, str. Trandafirilor 37</p>
-      <p><a href="mailto:ddulcelier@gmail.com">ddulcelier@gmail.com</a></p>
-    </address>
-    <div class="social">
-      <a class="tiktok" href="https://www.tiktok.com/@dulcelier" target="_blank" rel="noopener noreferrer">Urmărește-ne pe TikTok</a>
-      <img src="images/products/tiktok-qr.svg" alt="Cod QR către pagina de TikTok DulceLier" width="148" height="148">
+    <div class="footer-details">
+      <nav class="footer-nav" aria-label="Subsol">
+        <a href="#catalog">Catalog</a>
+        <a href="#prezentare">Despre brand</a>
+        <a href="#contact">Contacte</a>
+      </nav>
+      <address>
+        <p>or. Rîșcani, str. Trandafirilor 37</p>
+        <p><a href="mailto:ddulcelier@gmail.com">ddulcelier@gmail.com</a></p>
+      </address>
+      <div class="social">
+        <a class="tiktok" href="https://www.tiktok.com/@f.e..dulcelier.s" target="_blank" rel="noopener noreferrer">Urmărește-ne pe TikTok</a>
+        <a href="https://www.tiktok.com/@f.e..dulcelier.s" target="_blank" rel="noopener noreferrer">
+          <img src="images/products/qr-code.jpg" alt="Cod QR către pagina de TikTok DulceLier" width="148" height="178">
+        </a>
+      </div>
     </div>
   </footer>
 
