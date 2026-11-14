@@ -376,6 +376,12 @@ address a:focus-visible,
   background: transparent;
 }
 
+.card img.product-photo-portrait {
+  height: 300px;
+  width: min(210px, 68%);
+  object-fit: contain;
+}
+
 .card h4 {
   font-size: 1.55rem;
   line-height: 1.15;
