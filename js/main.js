@@ -6,7 +6,25 @@ const contactFeature = document.querySelector(".contact-feature");
 const contactLinks = document.querySelectorAll('a[href="#contact"]');
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNav = document.querySelector("#primary-nav");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = themeToggle.querySelector(".theme-icon");
+const themeLabel = themeToggle.querySelector(".theme-label");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function setTheme(theme) {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = theme;
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeToggle.setAttribute("aria-label", isDark ? "Activează tema luminoasă" : "Activează tema întunecată");
+  themeIcon.textContent = isDark ? "☀" : "☾";
+  themeLabel.textContent = isDark ? "Zi" : "Noapte";
+  localStorage.setItem("dulcelier-theme", theme);
+}
+
+setTheme(document.documentElement.dataset.theme || "light");
+themeToggle.addEventListener("click", () => {
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+});
 
 function setMenuOpen(open) {
   primaryNav.classList.toggle("is-open", open);
