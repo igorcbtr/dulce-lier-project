@@ -2,7 +2,7 @@
 
 ## About
 
-Одностраничный сайт DulceLier для презентации натуральных десертов, каталога продуктов, специальных предложений и контактной информации. Интерфейс адаптирован для мобильных устройств и настольных экранов.
+A one-page website for DulceLier to showcase natural desserts, a product catalog, special offers, and contact information. The interface is responsive for both mobile and desktop screens.
 
 ## Локальный запуск
 
