@@ -4,7 +4,7 @@
 
 A one-page website for DulceLier to showcase natural desserts, a product catalog, special offers, and contact information. The interface is responsive for both mobile and desktop screens.
 
-## Локальный запуск
+## How to start ?
 
 ```bash
 python3 -m http.server 4173
